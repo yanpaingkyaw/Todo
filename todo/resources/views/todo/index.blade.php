@@ -9,8 +9,9 @@
 <body>
     <h1>Simple Todo List with Laravel</h1>
     <ul>
-        <li>Task 1</li>
-        <li>Task 2</li>
+       @foreach ($tasks as $task)
+        <li> {{ $task['title'] }}</li>   
+       @endforeach
     </ul2
 </body>
 </html>

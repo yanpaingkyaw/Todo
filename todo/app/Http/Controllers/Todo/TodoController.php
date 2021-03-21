@@ -9,6 +9,13 @@ class TodoController extends Controller
 {
     //
     public function index() {
-        return view('todo/index');
+        $data = [
+            ["id" => 1, "title" => "my task1" ],
+            ["id" => 1, "title" => "my task2" ],
+        ];
+
+        return view('todo/index', [
+            'tasks' => $data
+        ]);
     }
 }
